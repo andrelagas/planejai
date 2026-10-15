@@ -1,63 +1,86 @@
-# Planej.ai
+# Planej.ai — Educador Financeiro Inteligente
 
-O Planej.ai é uma aplicação web de planejamento financeiro pessoal desenvolvida com React e TypeScript.
+Aplicação web de planejamento financeiro pessoal desenvolvida com React e TypeScript.
 
-A aplicação permite que a pessoa usuária informe sua renda, gastos, dívidas e uma meta financeira. Ao finalizar a simulação, os dados são armazenados no navegador e utilizados para gerar um diagnóstico financeiro personalizado com IA Generativa.
+O Planej.ai permite registrar renda, gastos, dívidas e metas financeiras. Ao finalizar uma simulação, a aplicação apresenta os resultados e utiliza inteligência artificial generativa para fornecer insights financeiros personalizados.
 
-## Tecnologias
+## 🚀 Funcionalidades
+
+- Formulário de planejamento financeiro em múltiplas etapas
+- Interface com tema claro e escuro
+- Persistência de simulações no navegador utilizando LocalStorage
+- Página de resultados financeiros
+- Geração de insights com inteligência artificial generativa
+- Tratamento de carregamento e erros
+- Histórico de simulações com acesso aos resultados salvos
+
+## 🛠️ Tecnologias utilizadas
 
 - React
 - TypeScript
 - Vite
 - Tailwind CSS
 - React Router
-- Gemini API
+- Google Gemini API
 - LocalStorage
 - Lucide React
 
-## Funcionalidades
+## ⚙️ Como executar o projeto
 
-- Formulário financeiro em múltiplas etapas
-- Tema claro e escuro
-- Persistência das simulações no LocalStorage
-- Página de resultados
-- Geração de insights com IA
-- Tratamento de carregamento e erros
-- Histórico de simulações
+### Pré-requisitos
 
-## Minha melhoria
+- Node.js instalado
+- npm ou pnpm
 
-Implementei uma página de histórico de simulações.
+### Instalação
 
-A funcionalidade permite visualizar todas as simulações armazenadas no navegador e acessar novamente o resultado de cada uma através do seu identificador único.
+1. Clone o repositório:
 
-Para isso, foi adicionada a função `getAllFormData` ao hook `useSimulationStorage` e criada uma nova página `HistoryPage`.
+   ```bash
+   git clone https://github.com/andrelagas/planejai.git
+   ```
 
-Também foi adicionada a rota `/historico` e a navegação pelo Header.
+2. Entre na pasta do projeto:
 
-## Como testar
+   ```bash
+   cd planejai
+   ```
 
-1. Execute o projeto.
-2. Crie uma nova simulação.
-3. Finalize o formulário.
-4. Acesse o menu Histórico.
-5. Verifique a simulação criada.
-6. Clique em "Ver simulação".
-7. Crie uma segunda simulação e confirme que as duas aparecem no histórico.
+3. Instale as dependências:
 
-## O que aprendi
+   ```bash
+   npm install
+   ```
+
+4. Configure as variáveis de ambiente necessárias em um arquivo `.env`, seguindo as instruções do projeto. Não publique chaves de API ou outros segredos no GitHub.
+
+5. Inicie o ambiente de desenvolvimento:
+
+   ```bash
+   npm run dev
+   ```
+
+6. Abra no navegador o endereço indicado pelo Vite no terminal.
+
+## 📚 Aprendizados
 
 Durante o desenvolvimento, pratiquei:
 
-- Componentização com React;
-- gerenciamento de estado com `useState`;
-- navegação com React Router;
-- tipagem com TypeScript;
-- organização por responsabilidade;
-- manipulação de objetos e arrays;
-- persistência com LocalStorage;
-- criação e utilização de hooks;
-- integração de Front-End com IA Generativa;
-- criação de funcionalidades a partir de uma aplicação existente.
+- Construção de interfaces com React e TypeScript
+- Criação e reutilização de componentes
+- Gerenciamento de estado com hooks
+- Navegação entre páginas com React Router
+- Manipulação de objetos e arrays
+- Persistência de dados no navegador
+- Integração de uma aplicação Front-End com uma API de inteligência artificial
+- Análise da estrutura de um projeto existente e implementação de novas funcionalidades
 
-Também aprendi a analisar a estrutura de um projeto antes de modificar o código e a entender como diferentes partes da aplicação se comunicam.
+## 🎯 Objetivo do projeto
+
+Este projeto faz parte da minha jornada de aprendizado em desenvolvimento Front-End e representa minha prática com tecnologias modernas para construção de aplicações web.
+
+## 👨‍💻 Autor
+
+André Paulo
+
+[GitHub](https://github.com/andrelagas)
